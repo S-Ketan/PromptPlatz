@@ -12,6 +12,7 @@ const RootLayout = ({children}) => {
         <head>
             <title>{metadata.title}</title>
             <meta name="description" content={metadata.description} />
+            <link rel="icon" href="/assets/images/logo.svg" />
         </head>
         <Provider>
         <body>
