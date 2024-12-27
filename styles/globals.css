@@ -45,7 +45,7 @@
   height: fit-content;
   z-index: 3;
   width: 100%;  
-  max-width: 640px;
+ 
   background-image: radial-gradient(
       at 40% 60%,
       hsla(190, 100%, 75%, 1) 0px,
