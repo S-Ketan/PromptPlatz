@@ -9,8 +9,12 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = compat.config({
-  extends: ["next/core-web-vitals"],
-});
+// Ensure only serializable configuration
+const eslintConfig = [
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    extends: ["next/core-web-vitals"],
+  },
+];
 
 export default eslintConfig;
